@@ -1,5 +1,5 @@
 import React from 'react';
-import Mainpagelayout from '../components/Mainpagelayout';
+import Mainpagelayout from '../components/MainPageLayout';
 
 const Starred = () => {
   return <Mainpagelayout>
