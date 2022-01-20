@@ -11,6 +11,7 @@
     "react-router": "^5.2.0",
     "react-router-dom": "^5.2.0",
     "react-scripts": "5.0.0",
+    "styled-components": "^5.3.3",
     "web-vitals": "^0.2.4",
     "workbox-background-sync": "^5.1.4",
     "workbox-broadcast-update": "^5.1.4",
@@ -30,8 +31,6 @@
     "build": "npm run clear && react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-   
-    
     "format:lint": "npm run format && npm run lint",
     "clear": "rimraf build"
   },
