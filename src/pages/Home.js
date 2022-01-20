@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState} from 'react'
 import MainPageLayout from '../components/MainPageLayout'
 import { apiGet } from '../misc/config'
 import ShowGrid from '../components/show/ShowGrid'
@@ -10,6 +10,8 @@ const Home = () => {
   const [searchOption, setSearchOption] = useState('shows')
 
   const isShowsSearch = searchOption === 'shows'
+
+
 
   const onSearch = () => {
     apiGet(`/search/${searchOption}?q=${input}`).then((result) => {
