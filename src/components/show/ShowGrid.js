@@ -1,26 +1,26 @@
-import React from 'react'
-import ShowCard from './ShowCard'
+import React from 'react';
+import ShowCard from './ShowCard';
 
-import { FlexGrid } from '../styled'
+import { FlexGrid } from '../styled';
 
-import IMAGE_NOT_FOUND from '../../images/not-found.png'
-import { useShows } from '../../misc/custom-hooks'
+import IMAGE_NOT_FOUND from '../../images/not-found.png';
+import { useShows } from '../../misc/custom-hooks';
 
 const ShowGrid = ({ data }) => {
-  const [starredShows, dispatchStarred] = useShows()
+  const [starredShows, dispatchStarred] = useShows();
 
   return (
     <FlexGrid>
       {data.map(({ show }) => {
-        const isStarred = starredShows.includes(show.id)
+        const isStarred = starredShows.includes(show.id);
 
         const onStarClick = () => {
           if (isStarred) {
-            dispatchStarred({ type: 'REMOVE', showId: show.id })
+            dispatchStarred({ type: 'REMOVE', showId: show.id });
           } else {
-            dispatchStarred({ type: 'ADD', showId: show.id })
+            dispatchStarred({ type: 'ADD', showId: show.id });
           }
-        }
+        };
 
         return (
           <ShowCard
@@ -32,10 +32,10 @@ const ShowGrid = ({ data }) => {
             onStarClick={onStarClick}
             isStarred={isStarred}
           />
-        )
+        );
       })}
     </FlexGrid>
-  )
-}
+  );
+};
 
-export default ShowGrid
+export default ShowGrid;

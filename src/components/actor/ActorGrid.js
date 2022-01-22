@@ -1,8 +1,8 @@
-import React from 'react'
-import ActorCard from './ActorCard'
-import {FlexGrid} from "../styled"
+import React from 'react';
+import ActorCard from './ActorCard';
 
-import IMAGE_NOT_FOUND from '../../images/not-found.png'
+import IMAGE_NOT_FOUND from '../../images/not-found.png';
+import { FlexGrid } from '../styled';
 
 const ActorGrid = ({ data }) => {
   return (
@@ -19,7 +19,7 @@ const ActorGrid = ({ data }) => {
         />
       ))}
     </FlexGrid>
-  )
-}
+  );
+};
 
-export default ActorGrid
+export default ActorGrid;

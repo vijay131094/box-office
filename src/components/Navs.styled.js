@@ -1,5 +1,5 @@
-import styled from 'styled-components'
-import { Link } from 'react-router-dom'
+import styled from 'styled-components';
+import { Link } from 'react-router-dom';
 
 export const NavList = styled.ul`
   display: flex;
@@ -7,7 +7,7 @@ export const NavList = styled.ul`
   list-style: none;
   margin: 0 0 30px;
   padding: 0;
-`
+`;
 
 export const LinkStyled = styled(Link)`
   margin: 0 10px;
@@ -38,4 +38,4 @@ export const LinkStyled = styled(Link)`
       }
     }
   }
-`
+`;

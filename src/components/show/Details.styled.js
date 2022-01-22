@@ -1,4 +1,4 @@
-import styled from 'styled-components'
+import styled from 'styled-components';
 
 export const DetailsWrapper = styled.div`
   p {
@@ -8,4 +8,4 @@ export const DetailsWrapper = styled.div`
       font-weight: bold;
     }
   }
-`
+`;

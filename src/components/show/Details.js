@@ -1,5 +1,5 @@
-import React from 'react'
-import { DetailsWrapper } from './Details.styled'
+import React from 'react';
+import { DetailsWrapper } from './Details.styled';
 
 const Details = ({ status, premiered, network }) => {
   return (
@@ -11,7 +11,7 @@ const Details = ({ status, premiered, network }) => {
         Premiered {premiered} {network ? `on ${network.name}` : null}
       </p>
     </DetailsWrapper>
-  )
-}
+  );
+};
 
-export default Details
+export default Details;

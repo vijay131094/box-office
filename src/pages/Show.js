@@ -1,23 +1,23 @@
 /* eslint-disable no-underscore-dangle */
-import React from 'react'
-import { useParams } from 'react-router-dom'
-import ShowMainData from '../components/show/ShowMainData'
-import Details from '../components/show/Details'
-import Seasons from '../components/show/Seasons'
-import Cast from '../components/show/Cast'
-import { ShowPageWrapper, InfoBlock } from './Show.styled'
-import { useShow } from '../misc/custom-hooks'
+import React from 'react';
+import { useParams } from 'react-router-dom';
+import ShowMainData from '../components/show/ShowMainData';
+import Details from '../components/show/Details';
+import Seasons from '../components/show/Seasons';
+import Cast from '../components/show/Cast';
+import { ShowPageWrapper, InfoBlock } from './Show.styled';
+import { useShow } from '../misc/custom-hooks';
 
 const Show = () => {
-  const { id } = useParams()
-  const { show, isLoading, error } = useShow(id)
+  const { id } = useParams();
+  const { show, isLoading, error } = useShow(id);
 
   if (isLoading) {
-    return <div>Data is being loaded</div>
+    return <div>Data is being loaded</div>;
   }
 
   if (error) {
-    return <div>Error occured: {error}</div>
+    return <div>Error occured: {error}</div>;
   }
 
   return (
@@ -49,7 +49,7 @@ const Show = () => {
         <Cast cast={show._embedded.cast} />
       </InfoBlock>
     </ShowPageWrapper>
-  )
-}
+  );
+};
 
-export default Show
+export default Show;

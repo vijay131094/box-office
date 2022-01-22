@@ -1,14 +1,14 @@
-import React from 'react'
+import React from 'react';
 
-import IMG_PLACEHOLDER from '../../images/not-found.png'
-import { Star } from '../styled'
-import { MainDataWrapper, Headline, TagList } from './ShowMainData.styled'
+import IMG_PLACEHOLDER from '../../images/not-found.png';
+import { Star } from '../styled';
+import { MainDataWrapper, Headline, TagList } from './ShowMainData.styled';
 
 const ShowMainData = ({ name, rating, summary, tags, image }) => {
   return (
     <MainDataWrapper>
-      <img src={image ? image.original : IMG_PLACEHOLDER} alt='show-cover' />
-      <div className='text-side'>
+      <img src={image ? image.original : IMG_PLACEHOLDER} alt="show-cover" />
+      <div className="text-side">
         <Headline>
           <h1>{name}</h1>
           <div>
@@ -17,7 +17,7 @@ const ShowMainData = ({ name, rating, summary, tags, image }) => {
           </div>
         </Headline>
         <div
-          className='summary'
+          className="summary"
           dangerouslySetInnerHTML={{ __html: summary }}
         />
 
@@ -31,6 +31,6 @@ const ShowMainData = ({ name, rating, summary, tags, image }) => {
         </div>
       </div>
     </MainDataWrapper>
-  )
-}
-export default ShowMainData
+  );
+};
+export default ShowMainData;

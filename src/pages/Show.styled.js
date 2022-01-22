@@ -1,4 +1,4 @@
-import styled from 'styled-components'
+import styled from 'styled-components';
 
 export const ShowPageWrapper = styled.div`
   padding: 0 20px;
@@ -14,7 +14,7 @@ export const ShowPageWrapper = styled.div`
   @media only screen and (min-width: 992px) {
     padding: 0 80px;
   }
-`
+`;
 
 export const InfoBlock = styled.div`
   margin-bottom: 40px;
@@ -23,4 +23,4 @@ export const InfoBlock = styled.div`
     margin-bottom: 30px;
     font-size: 22px;
   }
-`
+`;

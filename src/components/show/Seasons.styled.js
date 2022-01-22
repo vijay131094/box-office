@@ -1,4 +1,4 @@
-import styled from 'styled-components'
+import styled from 'styled-components';
 
 export const SeasonsWrapper = styled.div`
   p {
@@ -8,7 +8,7 @@ export const SeasonsWrapper = styled.div`
   span {
     font-weight: 700;
   }
-`
+`;
 
 export const SeasonList = styled.div`
   display: flex;
@@ -34,4 +34,4 @@ export const SeasonList = styled.div`
       flex: 1;
     }
   }
-`
+`;
